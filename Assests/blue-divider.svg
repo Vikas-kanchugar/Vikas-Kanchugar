@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="24" viewBox="0 0 1000 24" role="img" aria-label="Blue and teal section divider">
+  <defs>
+    <linearGradient id="blueLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1D4ED8" stop-opacity="0"/>
+      <stop offset=".45" stop-color="#38BDF8"/>
+      <stop offset=".55" stop-color="#2DD4BF"/>
+      <stop offset="1" stop-color="#1D4ED8" stop-opacity="0"/>
+      <animate attributeName="x1" values="-.5;.5;-.5" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values=".5;1.5;.5" dur="7s" repeatCount="indefinite"/>
+    </linearGradient>
+  </defs>
+  <path d="M0 12H1000" stroke="url(#blueLine)" stroke-width="1.5"/>
+  <path d="M490 12L500 5L510 12L500 19Z" fill="#2563EB" stroke="#2DD4BF" stroke-opacity=".9"/>
+</svg>
