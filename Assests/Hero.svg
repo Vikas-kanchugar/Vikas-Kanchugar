@@ -1,50 +1,61 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="heroTitle heroDesc">
-  <title id="heroTitle">Vikas Kanchugar — Developer Profile</title>
-  <desc id="heroDesc">A premium midnight navy and electric blue banner with a fine grid, animated orbital rings, glowing path, and developer identity.</desc>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+  <title id="title">Vikas Kanchugar — Developer Profile</title>
+  <desc id="desc">Animated burgundy developer banner with a technical grid, orbit rings, rose gradient and glowing underline.</desc>
   <defs>
-    <linearGradient id="proBg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#080D18"/><stop offset=".55" stop-color="#111827"/><stop offset="1" stop-color="#172554"/>
+    <linearGradient id="vkBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#10070C"/>
+      <stop offset="55%" stop-color="#190B12"/>
+      <stop offset="100%" stop-color="#451126"/>
     </linearGradient>
-    <linearGradient id="proFlow" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#38BDF8" stop-opacity=".08"/>
-      <stop offset=".45" stop-color="#2DD4BF" stop-opacity=".95"/>
-      <stop offset=".7" stop-color="#38BDF8"/>
-      <stop offset="1" stop-color="#A78BFA" stop-opacity=".18"/>
-      <animate attributeName="x1" values="-.5;.5;-.5" dur="9s" repeatCount="indefinite"/>
-      <animate attributeName="x2" values=".5;1.5;.5" dur="9s" repeatCount="indefinite"/>
+    <linearGradient id="vkFlow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#701A3D" stop-opacity=".15"/>
+      <stop offset="50%" stop-color="#C77B9B"/>
+      <stop offset="100%" stop-color="#E5B5C7" stop-opacity=".25"/>
+      <animate attributeName="x1" values="-0.5;0.5;-0.5" dur="9s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0.5;1.5;0.5" dur="9s" repeatCount="indefinite"/>
     </linearGradient>
-    <pattern id="proGrid" width="36" height="36" patternUnits="userSpaceOnUse">
-      <path d="M36 0H0V36" fill="none" stroke="#93C5FD" stroke-opacity=".08"/>
+    <pattern id="vkGrid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#E5B5C7" stroke-opacity=".08"/>
     </pattern>
-    <radialGradient id="proAura">
-      <stop offset="0" stop-color="#2563EB" stop-opacity=".34"/><stop offset="1" stop-color="#2563EB" stop-opacity="0"/>
+    <radialGradient id="vkAura">
+      <stop offset="0%" stop-color="#701A3D" stop-opacity=".4"/>
+      <stop offset="100%" stop-color="#701A3D" stop-opacity="0"/>
     </radialGradient>
-    <filter id="proGlow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5"/></filter>
+    <filter id="vkGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
   </defs>
-  <rect width="1200" height="430" rx="20" fill="url(#proBg)"/>
-  <rect width="1200" height="430" rx="20" fill="url(#proGrid)"/>
-  <ellipse cx="970" cy="205" rx="350" ry="290" fill="url(#proAura)"/>
-  <g fill="none" stroke="#38BDF8" stroke-opacity=".34">
-    <ellipse cx="970" cy="202" rx="210" ry="82" transform="rotate(-28 970 202)">
-      <animateTransform attributeName="transform" type="rotate" from="-28 970 202" to="332 970 202" dur="48s" repeatCount="indefinite"/>
+
+  <rect width="1200" height="430" rx="20" fill="url(#vkBg)"/>
+  <rect width="1200" height="430" rx="20" fill="url(#vkGrid)"/>
+  <ellipse cx="970" cy="210" rx="340" ry="290" fill="url(#vkAura)"/>
+
+  <g fill="none" stroke="#C77B9B" stroke-opacity=".38">
+    <ellipse cx="970" cy="200" rx="205" ry="82" transform="rotate(-28 970 200)">
+      <animateTransform attributeName="transform" type="rotate" from="-28 970 200" to="332 970 200" dur="48s" repeatCount="indefinite"/>
     </ellipse>
-    <ellipse cx="970" cy="202" rx="210" ry="82" transform="rotate(34 970 202)"/>
-    <circle cx="970" cy="202" r="132" stroke="#2DD4BF" stroke-opacity=".3" stroke-dasharray="2 10"/>
-    <circle cx="970" cy="202" r="5" fill="#2DD4BF" stroke="none"/>
-    <circle cx="1115" cy="133" r="4" fill="#A78BFA" stroke="none"/>
-    <circle cx="840" cy="280" r="3" fill="#38BDF8" stroke="none"/>
+    <ellipse cx="970" cy="200" rx="205" ry="82" transform="rotate(35 970 200)"/>
+    <circle cx="970" cy="200" r="132" stroke-dasharray="2 10"/>
+    <circle cx="970" cy="200" r="5" fill="#E5B5C7" stroke="none"/>
+    <circle cx="1110" cy="133" r="4" fill="#C77B9B" stroke="none"/>
+    <circle cx="840" cy="280" r="3" fill="#E5B5C7" stroke="none"/>
   </g>
-  <g font-family="Inter, Segoe UI, Arial, sans-serif">
-    <text x="78" y="82" fill="#93C5FD" font-size="14" letter-spacing="4">DEVELOPER / CREATIVE PROBLEM SOLVER</text>
-    <text x="74" y="170" fill="#F8FAFC" font-size="59" font-weight="700" letter-spacing="-1.5">Vikas Kanchugar</text>
-    <text x="78" y="218" fill="#38BDF8" font-size="22">Frontend Developer</text>
-    <text x="78" y="251" fill="#CBD5E1" font-size="18">Full-Stack Developer  /  Cybersecurity Enthusiast</text>
-    <path d="M78 292H590" stroke="#2563EB" stroke-width="9" stroke-linecap="round" filter="url(#proGlow)" opacity=".85"/>
-    <path d="M78 292H590" stroke="url(#proFlow)" stroke-width="3" stroke-linecap="round" stroke-dasharray="240 300">
+
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="78" y="82" fill="#E5B5C7" font-size="14" letter-spacing="4">DEVELOPER / CREATIVE PROBLEM SOLVER</text>
+    <text x="74" y="170" fill="#F8F0F3" font-size="59" font-weight="700">Vikas Kanchugar</text>
+    <text x="78" y="218" fill="#E5B5C7" font-size="22">Frontend Developer</text>
+    <text x="78" y="251" fill="#C77B9B" font-size="18">Full-Stack Developer / Cybersecurity Enthusiast</text>
+
+    <path d="M78 292H590" stroke="#701A3D" stroke-width="9" stroke-linecap="round" filter="url(#vkGlow)" opacity=".8"/>
+    <path d="M78 292H590" stroke="url(#vkFlow)" stroke-width="3" stroke-linecap="round" stroke-dasharray="260 280">
       <animate attributeName="stroke-dashoffset" values="540;0;-540" dur="8s" repeatCount="indefinite"/>
     </path>
-    <text x="78" y="343" fill="#F8FAFC" fill-opacity=".78" font-size="14" letter-spacing="2.5">BUILD  ·  LEARN  ·  SECURE  ·  REPEAT</text>
-    <text x="78" y="378" fill="#2DD4BF" font-size="12" letter-spacing="1.6">BCA GRADUATE · 2026</text>
+
+    <text x="78" y="343" fill="#F8F0F3" fill-opacity=".8" font-size="14" letter-spacing="2.5">BUILD · LEARN · SECURE · REPEAT</text>
+    <text x="78" y="378" fill="#C77B9B" font-size="12" letter-spacing="1.6">BCA GRADUATE · 2026</text>
   </g>
-  <path d="M24 24H53M24 24V53M1176 24H1147M1176 24V53M24 406H53M24 406V377M1176 406H1147M1176 406V377" fill="none" stroke="#38BDF8" stroke-opacity=".7" stroke-width="1.5"/>
+
+  <path d="M24 24H53M24 24V53M1176 24H1147M1176 24V53M24 406H53M24 406V377M1176 406H1147M1176 406V377" fill="none" stroke="#C77B9B" stroke-opacity=".7" stroke-width="1.5"/>
 </svg>
