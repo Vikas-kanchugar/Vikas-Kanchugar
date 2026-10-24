@@ -1,0 +1,14 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="24" viewBox="0 0 1000 24" role="img" aria-label="Burgundy section divider">
+  <defs>
+    <linearGradient id="wineLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#451126" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#C77B9B" stop-opacity=".9"/>
+      <stop offset="100%" stop-color="#451126" stop-opacity="0"/>
+      <animate attributeName="x1" values="-0.5;0.5;-0.5" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0.5;1.5;0.5" dur="8s" repeatCount="indefinite"/>
+    </linearGradient>
+  </defs>
+  <path d="M0 12H1000" stroke="url(#wineLine)" stroke-width="1.5"/>
+  <path d="M490 12L500 5L510 12L500 19Z" fill="#701A3D" stroke="#E5B5C7" stroke-opacity=".7"/>
+</svg>
