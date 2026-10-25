@@ -1,27 +1,38 @@
-
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="110" viewBox="0 0 1000 110" role="img" aria-labelledby="footerTitle">
-  <title id="footerTitle">Animated burgundy footer</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 180" width="1200" height="180" role="img" aria-label="Footer">
   <defs>
-    <linearGradient id="footerFlow" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#451126" stop-opacity="0"/>
-      <stop offset="45%" stop-color="#701A3D"/>
-      <stop offset="55%" stop-color="#E5B5C7"/>
-      <stop offset="100%" stop-color="#451126" stop-opacity="0"/>
-      <animate attributeName="x1" values="-0.5;0.5;-0.5" dur="8s" repeatCount="indefinite"/>
-      <animate attributeName="x2" values="0.5;1.5;0.5" dur="8s" repeatCount="indefinite"/>
+    <linearGradient id="hff-bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0B0A10"/>
+      <stop offset="50%" stop-color="#14121C"/>
+      <stop offset="100%" stop-color="#0B0A10"/>
     </linearGradient>
+    <linearGradient id="hff-line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3D2A52"/>
+      <stop offset="50%" stop-color="#B57BEE"/>
+      <stop offset="100%" stop-color="#E49A5C"/>
+    </linearGradient>
+    <radialGradient id="hff-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#B57BEE" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#B57BEE" stop-opacity="0"/>
+    </radialGradient>
   </defs>
-  <g stroke="#C77B9B" stroke-opacity=".2">
-    <path d="M70 28V38M150 28V38M230 28V38M310 28V38M390 28V38M610 28V38M690 28V38M770 28V38M850 28V38M930 28V38"/>
-  </g>
-  <path d="M30 58H970" stroke="#451126" stroke-opacity=".55"/>
-  <path d="M30 58H970" stroke="url(#footerFlow)" stroke-width="2"/>
-  <g fill="none" stroke="#C77B9B" stroke-opacity=".8">
-    <circle cx="500" cy="58" r="15"/>
-    <circle cx="500" cy="58" r="27" stroke-dasharray="2 6">
-      <animateTransform attributeName="transform" type="rotate" from="0 500 58" to="360 500 58" dur="35s" repeatCount="indefinite"/>
-    </circle>
-    <path d="M470 58H484M516 58H530"/>
-  </g>
-  <circle cx="500" cy="58" r="3.5" fill="#E5B5C7"/>
+
+  <rect width="1200" height="180" fill="url(#hff-bg)" rx="16"/>
+  <ellipse cx="600" cy="90" rx="360" ry="60" fill="url(#hff-glow)">
+    <animate attributeName="rx" values="320;420;320" dur="10s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <line x1="120" y1="56" x2="1080" y2="56" stroke="url(#hff-line)" stroke-width="1.5" stroke-linecap="round">
+    <animate attributeName="x1" values="120;220;120" dur="9s" repeatCount="indefinite"/>
+    <animate attributeName="x2" values="1080;980;1080" dur="9s" repeatCount="indefinite"/>
+  </line>
+
+  <text x="600" y="106" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="14" fill="#B9AFC9" letter-spacing="4">
+    BUILT WITH INTENT · DESIGNED WITH RESTRAINT
+  </text>
+  <text x="600" y="134" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#B57BEE" letter-spacing="2">
+    Vikas Kanchugar
+  </text>
+  <circle cx="600" cy="156" r="2.5" fill="#E49A5C">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
 </svg>
