@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-label="Current focus">
+  <defs>
+    <linearGradient id="hf-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#14121C"/>
+      <stop offset="100%" stop-color="#0B0A10"/>
+    </linearGradient>
+    <linearGradient id="hf-accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3D2A52"/>
+      <stop offset="50%" stop-color="#B57BEE"/>
+      <stop offset="100%" stop-color="#E49A5C"/>
+      <animate attributeName="x1" values="0;1;0" dur="9s" repeatCount="indefinite"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="320" rx="16" fill="url(#hf-bg)"/>
+  <g font-family="'IBM Plex Mono', 'Courier New', monospace" font-size="11" fill="#B57BEE" letter-spacing="3">
+    <text x="60" y="46">10 / CURRENT FOCUS</text>
+  </g>
+  <text x="60" y="88" font-family="Georgia, 'Times New Roman', serif" font-size="28" fill="#F2EEF8">What I'm working on</text>
+  <rect x="60" y="102" width="160" height="3" rx="1.5" fill="url(#hf-accent)">
+    <animate attributeName="width" values="60;220;60" dur="6s" repeatCount="indefinite"/>
+  </rect>
+
+  <g font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#F2EEF8">
+    <circle cx="80" cy="150" r="5" fill="#B57BEE"><animate attributeName="r" values="3;7;3" dur="3s" repeatCount="indefinite"/></circle>
+    <text x="100" y="156">Strengthening programming fundamentals and problem-solving</text>
+
+    <circle cx="80" cy="185" r="5" fill="#E49A5C"><animate attributeName="r" values="3;7;3" dur="3.4s" repeatCount="indefinite"/></circle>
+    <text x="100" y="191">Building and polishing portfolio-ready web projects</text>
+
+    <circle cx="80" cy="220" r="5" fill="#8FBF9F"><animate attributeName="r" values="3;7;3" dur="3.8s" repeatCount="indefinite"/></circle>
+    <text x="100" y="226">Improving code quality, Git workflows, and documentation</text>
+
+    <circle cx="80" cy="255" r="5" fill="#B57BEE"><animate attributeName="r" values="3;7;3" dur="4.2s" repeatCount="indefinite"/></circle>
+    <text x="100" y="261">Understanding deployment, debugging, and practical workflows</text>
+
+    <circle cx="80" cy="290" r="5" fill="#E49A5C"><animate attributeName="r" values="3;7;3" dur="4.6s" repeatCount="indefinite"/></circle>
+    <text x="100" y="296">Hands-on learning in local AI and Linux/security fundamentals</text>
+  </g>
+</svg>
