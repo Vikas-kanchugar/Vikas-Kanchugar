@@ -53,7 +53,6 @@
     <rect width="1200" height="520" fill="url(#hh-bg)"/>
     <rect width="1200" height="520" fill="url(#hh-dots)"/>
 
-    <!-- Multi-tone glows -->
     <circle cx="1000" cy="140" r="260" fill="url(#hh-glow-v)">
       <animate attributeName="r" values="230;290;230" dur="10s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0.6;1;0.6" dur="10s" repeatCount="indefinite"/>
@@ -65,7 +64,6 @@
       <animate attributeName="r" values="120;180;120" dur="9s" repeatCount="indefinite"/>
     </circle>
 
-    <!-- Triple orbit, staggered -->
     <g opacity="0.6" filter="url(#hh-soft)">
       <ellipse cx="970" cy="260" rx="270" ry="140" fill="none" stroke="#3D2A52" stroke-width="1">
         <animateTransform attributeName="transform" type="rotate" from="0 970 260" to="360 970 260" dur="44s" repeatCount="indefinite"/>
@@ -87,7 +85,6 @@
       </circle>
     </g>
 
-    <!-- Draw-in accent lines, offset timing -->
     <path d="M 80 410 C 260 300, 420 470, 620 350 S 900 250, 1120 360" fill="none" stroke="url(#hh-violet)" stroke-width="2" stroke-linecap="round" opacity="0.9">
       <animate attributeName="stroke-dasharray" values="0 1700;850 850;0 1700" dur="15s" repeatCount="indefinite"/>
     </path>
@@ -95,13 +92,11 @@
       <animate attributeName="stroke-dasharray" values="0 1700;600 1100;0 1700" dur="19s" begin="3s" repeatCount="indefinite"/>
     </path>
 
-    <!-- Left vertical rule with travelling node -->
     <line x1="60" y1="120" x2="60" y2="440" stroke="#3D2A52" stroke-width="1"/>
     <circle cx="60" cy="120" r="4" fill="#8FBF9F">
       <animate attributeName="cy" values="120;440;120" dur="11s" repeatCount="indefinite"/>
     </circle>
 
-    <!-- Name with shimmer -->
     <text x="100" y="220" font-family="Georgia, 'Times New Roman', serif" font-size="74" font-weight="700" fill="#F2EEF8" letter-spacing="1">
       Vikas Kanchugar
       <animate attributeName="opacity" values="0.92;1;0.92" dur="6s" repeatCount="indefinite"/>
@@ -111,7 +106,6 @@
       FRONTEND · FULL-STACK · CYBERSECURITY
     </text>
 
-    <!-- Dual underline, offset -->
     <rect x="102" y="300" width="380" height="4" rx="2" fill="url(#hh-underline)">
       <animate attributeName="width" values="120;460;120" dur="7s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0.75;1;0.75" dur="7s" repeatCount="indefinite"/>
@@ -121,7 +115,6 @@
       <animate attributeName="opacity" values="0.15;0.85;0.15" dur="9.5s" begin="2s" repeatCount="indefinite"/>
     </rect>
 
-    <!-- Micro-label row -->
     <g font-family="'IBM Plex Mono', 'Courier New', monospace" font-size="11" fill="#B9AFC9" letter-spacing="2">
       <text x="102" y="352">BCA · 2026</text>
       <text x="242" y="352">LOCAL AI</text>
@@ -137,7 +130,6 @@
       <animate attributeName="opacity" values="0.4;1;0.4" dur="10s" repeatCount="indefinite"/>
     </circle>
 
-    <!-- Drifting particles -->
     <g fill="#B57BEE" opacity="0.65">
       <circle cx="520" cy="130" r="1.6"><animate attributeName="cy" values="130;110;130" dur="6s" repeatCount="indefinite"/></circle>
       <circle cx="730" cy="400" r="1.6"><animate attributeName="cy" values="400;380;400" dur="7s" repeatCount="indefinite"/></circle>
