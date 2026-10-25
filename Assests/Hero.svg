@@ -1,61 +1,151 @@
-
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
-  <title id="title">Vikas Kanchugar — Developer Profile</title>
-  <desc id="desc">Animated burgundy developer banner with a technical grid, orbit rings, rose gradient and glowing underline.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520" role="img" aria-label="Vikas Kanchugar">
   <defs>
-    <linearGradient id="vkBg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#10070C"/>
-      <stop offset="55%" stop-color="#190B12"/>
-      <stop offset="100%" stop-color="#451126"/>
+    <linearGradient id="hh-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B0A10"/>
+      <stop offset="55%" stop-color="#14121C"/>
+      <stop offset="100%" stop-color="#0B0A10"/>
     </linearGradient>
-    <linearGradient id="vkFlow" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#701A3D" stop-opacity=".15"/>
-      <stop offset="50%" stop-color="#C77B9B"/>
-      <stop offset="100%" stop-color="#E5B5C7" stop-opacity=".25"/>
-      <animate attributeName="x1" values="-0.5;0.5;-0.5" dur="9s" repeatCount="indefinite"/>
-      <animate attributeName="x2" values="0.5;1.5;0.5" dur="9s" repeatCount="indefinite"/>
+    <linearGradient id="hh-violet" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3D2A52"/>
+      <stop offset="50%" stop-color="#B57BEE"/>
+      <stop offset="100%" stop-color="#F2EEF8"/>
+      <animate attributeName="x1" values="-1;1;-1" dur="14s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0;2;0" dur="14s" repeatCount="indefinite"/>
     </linearGradient>
-    <pattern id="vkGrid" width="34" height="34" patternUnits="userSpaceOnUse">
-      <path d="M34 0H0V34" fill="none" stroke="#E5B5C7" stroke-opacity=".08"/>
-    </pattern>
-    <radialGradient id="vkAura">
-      <stop offset="0%" stop-color="#701A3D" stop-opacity=".4"/>
-      <stop offset="100%" stop-color="#701A3D" stop-opacity="0"/>
+    <linearGradient id="hh-copper" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#E49A5C"/>
+      <stop offset="100%" stop-color="#B57BEE"/>
+    </linearGradient>
+    <linearGradient id="hh-underline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3D2A52"/>
+      <stop offset="60%" stop-color="#B57BEE"/>
+      <stop offset="100%" stop-color="#E49A5C"/>
+    </linearGradient>
+    <radialGradient id="hh-glow-v" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#B57BEE" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#B57BEE" stop-opacity="0"/>
     </radialGradient>
-    <filter id="vkGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="5"/>
+    <radialGradient id="hh-glow-c" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E49A5C" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#E49A5C" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="hh-glow-s" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8FBF9F" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#8FBF9F" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="hh-soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
+    <filter id="hh-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="saturate" values="0" result="m"/>
+      <feComponentTransfer in="m" result="f"><feFuncA type="linear" slope="0.06"/></feComponentTransfer>
+      <feBlend in="SourceGraphic" in2="f" mode="overlay"/>
+    </filter>
+    <pattern id="hh-dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.8" fill="#3D2A52" fill-opacity="0.55"/>
+    </pattern>
+    <clipPath id="hh-clip"><rect x="0" y="0" width="1200" height="520" rx="22"/></clipPath>
   </defs>
 
-  <rect width="1200" height="430" rx="20" fill="url(#vkBg)"/>
-  <rect width="1200" height="430" rx="20" fill="url(#vkGrid)"/>
-  <ellipse cx="970" cy="210" rx="340" ry="290" fill="url(#vkAura)"/>
+  <g clip-path="url(#hh-clip)">
+    <rect width="1200" height="520" fill="url(#hh-bg)"/>
+    <rect width="1200" height="520" fill="url(#hh-dots)"/>
 
-  <g fill="none" stroke="#C77B9B" stroke-opacity=".38">
-    <ellipse cx="970" cy="200" rx="205" ry="82" transform="rotate(-28 970 200)">
-      <animateTransform attributeName="transform" type="rotate" from="-28 970 200" to="332 970 200" dur="48s" repeatCount="indefinite"/>
-    </ellipse>
-    <ellipse cx="970" cy="200" rx="205" ry="82" transform="rotate(35 970 200)"/>
-    <circle cx="970" cy="200" r="132" stroke-dasharray="2 10"/>
-    <circle cx="970" cy="200" r="5" fill="#E5B5C7" stroke="none"/>
-    <circle cx="1110" cy="133" r="4" fill="#C77B9B" stroke="none"/>
-    <circle cx="840" cy="280" r="3" fill="#E5B5C7" stroke="none"/>
-  </g>
+    <!-- Multi-tone glows -->
+    <circle cx="1000" cy="140" r="260" fill="url(#hh-glow-v)">
+      <animate attributeName="r" values="230;290;230" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="160" cy="400" r="200" fill="url(#hh-glow-c)">
+      <animate attributeName="r" values="170;230;170" dur="12s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="620" cy="480" r="150" fill="url(#hh-glow-s)">
+      <animate attributeName="r" values="120;180;120" dur="9s" repeatCount="indefinite"/>
+    </circle>
 
-  <g font-family="Segoe UI, Arial, sans-serif">
-    <text x="78" y="82" fill="#E5B5C7" font-size="14" letter-spacing="4">DEVELOPER / CREATIVE PROBLEM SOLVER</text>
-    <text x="74" y="170" fill="#F8F0F3" font-size="59" font-weight="700">Vikas Kanchugar</text>
-    <text x="78" y="218" fill="#E5B5C7" font-size="22">Frontend Developer</text>
-    <text x="78" y="251" fill="#C77B9B" font-size="18">Full-Stack Developer / Cybersecurity Enthusiast</text>
+    <!-- Triple orbit, staggered -->
+    <g opacity="0.6" filter="url(#hh-soft)">
+      <ellipse cx="970" cy="260" rx="270" ry="140" fill="none" stroke="#3D2A52" stroke-width="1">
+        <animateTransform attributeName="transform" type="rotate" from="0 970 260" to="360 970 260" dur="44s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse cx="970" cy="260" rx="200" ry="104" fill="none" stroke="#B57BEE" stroke-width="0.8" stroke-dasharray="6 10">
+        <animateTransform attributeName="transform" type="rotate" from="360 970 260" to="0 970 260" dur="30s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse cx="970" cy="260" rx="130" ry="68" fill="none" stroke="#E49A5C" stroke-width="0.7" stroke-opacity="0.7">
+        <animateTransform attributeName="transform" type="rotate" from="0 970 260" to="360 970 260" dur="20s" repeatCount="indefinite"/>
+      </ellipse>
+      <circle cx="970" cy="260" r="4" fill="#F2EEF8">
+        <animate attributeName="r" values="3;6;3" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1240" cy="260" r="3" fill="#E49A5C">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="840" cy="260" r="2.5" fill="#8FBF9F">
+        <animate attributeName="opacity" values="1;0.3;1" dur="5s" repeatCount="indefinite"/>
+      </circle>
+    </g>
 
-    <path d="M78 292H590" stroke="#701A3D" stroke-width="9" stroke-linecap="round" filter="url(#vkGlow)" opacity=".8"/>
-    <path d="M78 292H590" stroke="url(#vkFlow)" stroke-width="3" stroke-linecap="round" stroke-dasharray="260 280">
-      <animate attributeName="stroke-dashoffset" values="540;0;-540" dur="8s" repeatCount="indefinite"/>
+    <!-- Draw-in accent lines, offset timing -->
+    <path d="M 80 410 C 260 300, 420 470, 620 350 S 900 250, 1120 360" fill="none" stroke="url(#hh-violet)" stroke-width="2" stroke-linecap="round" opacity="0.9">
+      <animate attributeName="stroke-dasharray" values="0 1700;850 850;0 1700" dur="15s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 80 440 C 300 360, 500 500, 720 400 S 960 310, 1120 410" fill="none" stroke="url(#hh-copper)" stroke-width="1.2" stroke-linecap="round" opacity="0.55">
+      <animate attributeName="stroke-dasharray" values="0 1700;600 1100;0 1700" dur="19s" begin="3s" repeatCount="indefinite"/>
     </path>
 
-    <text x="78" y="343" fill="#F8F0F3" fill-opacity=".8" font-size="14" letter-spacing="2.5">BUILD · LEARN · SECURE · REPEAT</text>
-    <text x="78" y="378" fill="#C77B9B" font-size="12" letter-spacing="1.6">BCA GRADUATE · 2026</text>
-  </g>
+    <!-- Left vertical rule with travelling node -->
+    <line x1="60" y1="120" x2="60" y2="440" stroke="#3D2A52" stroke-width="1"/>
+    <circle cx="60" cy="120" r="4" fill="#8FBF9F">
+      <animate attributeName="cy" values="120;440;120" dur="11s" repeatCount="indefinite"/>
+    </circle>
 
-  <path d="M24 24H53M24 24V53M1176 24H1147M1176 24V53M24 406H53M24 406V377M1176 406H1147M1176 406V377" fill="none" stroke="#C77B9B" stroke-opacity=".7" stroke-width="1.5"/>
+    <!-- Name with shimmer -->
+    <text x="100" y="220" font-family="Georgia, 'Times New Roman', serif" font-size="74" font-weight="700" fill="#F2EEF8" letter-spacing="1">
+      Vikas Kanchugar
+      <animate attributeName="opacity" values="0.92;1;0.92" dur="6s" repeatCount="indefinite"/>
+    </text>
+
+    <text x="102" y="272" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" fill="#B9AFC9" letter-spacing="4">
+      FRONTEND · FULL-STACK · CYBERSECURITY
+    </text>
+
+    <!-- Dual underline, offset -->
+    <rect x="102" y="300" width="380" height="4" rx="2" fill="url(#hh-underline)">
+      <animate attributeName="width" values="120;460;120" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.75;1;0.75" dur="7s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="102" y="300" width="380" height="4" rx="2" fill="#E49A5C" opacity="0.55">
+      <animate attributeName="width" values="60;420;60" dur="9.5s" begin="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.15;0.85;0.15" dur="9.5s" begin="2s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Micro-label row -->
+    <g font-family="'IBM Plex Mono', 'Courier New', monospace" font-size="11" fill="#B9AFC9" letter-spacing="2">
+      <text x="102" y="352">BCA · 2026</text>
+      <text x="242" y="352">LOCAL AI</text>
+      <text x="382" y="352">LINUX</text>
+      <text x="492" y="352">PYTHON</text>
+      <text x="622" y="352">REACT</text>
+    </g>
+    <g stroke="#3D2A52" stroke-width="1">
+      <line x1="102" y1="364" x2="700" y2="364"/>
+    </g>
+    <circle cx="102" cy="364" r="2.5" fill="#E49A5C">
+      <animate attributeName="cx" values="102;700;102" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="10s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Drifting particles -->
+    <g fill="#B57BEE" opacity="0.65">
+      <circle cx="520" cy="130" r="1.6"><animate attributeName="cy" values="130;110;130" dur="6s" repeatCount="indefinite"/></circle>
+      <circle cx="730" cy="400" r="1.6"><animate attributeName="cy" values="400;380;400" dur="7s" repeatCount="indefinite"/></circle>
+      <circle cx="900" cy="100" r="2"><animate attributeName="cy" values="100;80;100" dur="8s" repeatCount="indefinite"/></circle>
+      <circle cx="1120" cy="420" r="1.6"><animate attributeName="cy" values="420;400;420" dur="5.5s" repeatCount="indefinite"/></circle>
+      <circle cx="320" cy="470" r="1.6"><animate attributeName="cy" values="470;450;470" dur="6.5s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <rect width="1200" height="520" filter="url(#hh-grain)" opacity="0.4"/>
+  </g>
 </svg>
