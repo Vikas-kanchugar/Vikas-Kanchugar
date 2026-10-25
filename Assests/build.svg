@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" width="1200" height="460" role="img" aria-label="What I build and explore">
+  <defs>
+    <linearGradient id="hb-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B0A10"/>
+      <stop offset="100%" stop-color="#14121C"/>
+    </linearGradient>
+    <linearGradient id="hb-c1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3D2A52"/>
+      <stop offset="100%" stop-color="#241A33"/>
+    </linearGradient>
+    <linearGradient id="hb-c2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#241A33"/>
+      <stop offset="100%" stop-color="#3D2A52"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="460" rx="16" fill="url(#hb-bg)"/>
+  <g font-family="'IBM Plex Mono', 'Courier New', monospace" font-size="11" fill="#B57BEE" letter-spacing="3">
+    <text x="60" y="46">05 / CAPABILITIES</text>
+  </g>
+  <text x="60" y="88" font-family="Georgia, 'Times New Roman', serif" font-size="28" fill="#F2EEF8">What I build and explore</text>
+
+  <!-- Offset cards: 2 rows, alternating heights -->
+  <g>
+    <rect x="60" y="120" width="520" height="150" rx="12" fill="url(#hb-c1)">
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="7s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="60" y="120" width="520" height="150" rx="12" fill="none" stroke="#B57BEE" stroke-width="1" stroke-opacity="0.4">
+      <animate attributeName="stroke-opacity" values="0.2;0.7;0.2" dur="7s" repeatCount="indefinite"/>
+    </rect>
+    <text x="90" y="155" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#F2EEF8">Web experiences</text>
+    <g font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#B9AFC9">
+      <text x="90" y="186">Responsive layouts and practical interfaces with</text>
+      <text x="90" y="209">modern frontend tools. Usability, clear structure,</text>
+      <text x="90" y="232">consistent detail.</text>
+    </g>
+    <text x="90" y="256" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#B57BEE">REACT · VITE · TAILWIND</text>
+  </g>
+
+  <g>
+    <rect x="620" y="140" width="520" height="150" rx="12" fill="url(#hb-c2)">
+      <animate attributeName="opacity" values="1;0.9;1" dur="7.4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="620" y="140" width="520" height="150" rx="12" fill="none" stroke="#E49A5C" stroke-width="1" stroke-opacity="0.4">
+      <animate attributeName="stroke-opacity" values="0.7;0.2;0.7" dur="7.4s" repeatCount="indefinite"/>
+    </rect>
+    <text x="650" y="175" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#F2EEF8">Python projects</text>
+    <g font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#B9AFC9">
+      <text x="650" y="206">Small utilities, experiments, and scripts that</text>
+      <text x="650" y="229">strengthen programming fundamentals and solve</text>
+      <text x="650" y="252">practical problems.</text>
+    </g>
+    <text x="650" y="276" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#E49A5C">LOGIC · DEBUGGING · READABILITY</text>
+  </g>
+
+  <g>
+    <rect x="60" y="290" width="520" height="150" rx="12" fill="url(#hb-c2)">
+      <animate attributeName="opacity" values="1;0.9;1" dur="9s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="60" y="290" width="520" height="150" rx="12" fill="none" stroke="#E49A5C" stroke-width="1" stroke-opacity="0.4">
+      <animate attributeName="stroke-opacity" values="0.7;0.2;0.7" dur="9s" repeatCount="indefinite"/>
+    </rect>
+    <text x="90" y="325" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#F2EEF8">Linux &amp; networking</text>
+    <g font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#B9AFC9">
+      <text x="90" y="356">Command-line workflows, system basics, network</text>
+      <text x="90" y="379">inspection, security concepts in authorised</text>
+      <text x="90" y="402">environments.</text>
+    </g>
+    <text x="90" y="426" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#E49A5C">LINUX · NMAP · WIRESHARK</text>
+  </g>
+
+  <g>
+    <rect x="620" y="310" width="520" height="150" rx="12" fill="url(#hb-c1)">
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="9.4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="620" y="310" width="520" height="150" rx="12" fill="none" stroke="#8FBF9F" stroke-width="1" stroke-opacity="0.4">
+      <animate attributeName="stroke-opacity" values="0.2;0.7;0.2" dur="9.4s" repeatCount="indefinite"/>
+    </rect>
+    <text x="650" y="345" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#F2EEF8">AI experiments</text>
+    <g font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#B9AFC9">
+      <text x="650" y="376">Compact language models, local inference, and</text>
+      <text x="650" y="399">making AI tools accessible on everyday</text>
+      <text x="650" y="422">hardware.</text>
+    </g>
+    <text x="650" y="446" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#8FBF9F">QWEN2.5 · LORA · GGUF · LLAMA.CPP</text>
+  </g>
+</svg>
