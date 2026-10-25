@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/Hero.svg" width="100%" alt="Vikas Kanchugar — Frontend Developer, Full-Stack Developer, Cybersecurity Enthusiast" />
+<img src="assets/hero.svg" width="100%" alt="Vikas Kanchugar — Frontend Developer, Full-Stack Developer, Cybersecurity Enthusiast" />
 
 <p>
   <a href="https://vikas-kanchugar.vercel.app">
@@ -37,7 +37,7 @@
 
 <img src="assets/radar.svg" width="100%" alt="Skill focus radar" />
 
-<img src="assets/Principle.svg" width="100%" alt="Working principles" />
+<img src="assets/principles.svg" width="100%" alt="Working principles" />
 
 <img src="assets/pipeline.svg" width="100%" alt="Discover, define, build, validate, refine, deliver" />
 
@@ -60,4 +60,4 @@
 
 <img src="assets/connect.svg" width="100%" alt="Connect" />
 
-<img src="assets/Footer.svg" width="100%" alt="Thanks for visiting" />
+<img src="assets/footer.svg" width="100%" alt="Thanks for visiting" />
