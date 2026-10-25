@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" width="1200" height="120" role="img" aria-label="Profile spec sheet">
+  <defs>
+    <linearGradient id="hs-bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#14121C"/>
+      <stop offset="50%" stop-color="#241A33"/>
+      <stop offset="100%" stop-color="#14121C"/>
+    </linearGradient>
+    <linearGradient id="hs-scan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#B57BEE" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#B57BEE" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#B57BEE" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="120" rx="14" fill="url(#hs-bg)"/>
+
+  <g font-family="'IBM Plex Mono', 'Courier New', monospace" font-size="11" fill="#B9AFC9" letter-spacing="2">
+    <text x="40" y="34">ROLE</text>
+    <text x="240" y="34">FOCUS</text>
+    <text x="440" y="34">STACK</text>
+    <text x="680" y="34">STATUS</text>
+    <text x="900" y="34">BASED</text>
+  </g>
+
+  <g font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#F2EEF8">
+    <text x="40" y="72">Developer</text>
+    <text x="240" y="72">Frontend · Full-stack</text>
+    <text x="440" y="72">React · Python · Linux</text>
+    <text x="680" y="72">Open to opportunities</text>
+    <text x="900" y="72">India</text>
+  </g>
+
+  <g fill="#3D2A52">
+    <line x1="220" y1="30" x2="220" y2="80"/>
+    <line x1="420" y1="30" x2="420" y2="80"/>
+    <line x1="660" y1="30" x2="660" y2="80"/>
+    <line x1="880" y1="30" x2="880" y2="80"/>
+  </g>
+
+  <!-- Scanning highlight -->
+  <rect x="0" y="0" width="1200" height="120" fill="url(#hs-scan)" opacity="0.15">
+    <animate attributeName="opacity" values="0;0.35;0" dur="6s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Status dot -->
+  <circle cx="1050" cy="72" r="5" fill="#8FBF9F">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1050" cy="72" r="10" fill="none" stroke="#8FBF9F" stroke-width="1" opacity="0.4">
+    <animate attributeName="r" values="6;14;6" dur="2.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0;0.6" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+</svg>
