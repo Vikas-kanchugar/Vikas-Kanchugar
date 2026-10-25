@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img" aria-label="Skill focus radar">
+  <defs>
+    <linearGradient id="hr-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B0A10"/>
+      <stop offset="100%" stop-color="#14121C"/>
+    </linearGradient>
+    <linearGradient id="hr-sweep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#E49A5C" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#E49A5C" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="hr-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#B57BEE" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#B57BEE" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="400" rx="16" fill="url(#hr-bg)"/>
+  <g font-family="'IBM Plex Mono', 'Courier New', monospace" font-size="11" fill="#B57BEE" letter-spacing="3">
+    <text x="60" y="46">07 / FOCUS RADAR</text>
+  </g>
+  <text x="60" y="88" font-family="Georgia, 'Times New Roman', serif" font-size="28" fill="#F2EEF8">Where attention is going</text>
+  <text x="60" y="110" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#B9AFC9">Direction, not proficiency.</text>
+
+  <circle cx="380" cy="250" r="160" fill="url(#hr-glow)">
+    <animate attributeName="r" values="140;180;140" dur="8s" repeatCount="indefinite"/>
+  </circle>
+
+  <g fill="none" stroke="#3D2A52" stroke-width="0.8" opacity="0.9">
+    <circle cx="380" cy="250" r="40"/>
+    <circle cx="380" cy="250" r="80"/>
+    <circle cx="380" cy="250" r="120"/>
+    <circle cx="380" cy="250" r="150" stroke="#B57BEE"/>
+  </g>
+
+  <g stroke="#241A33" stroke-width="0.6" opacity="0.8">
+    <line x1="230" y1="250" x2="530" y2="250"/>
+    <line x1="380" y1="100" x2="380" y2="400"/>
+  </g>
+
+  <g transform="translate(380 250)">
+    <path d="M 0 0 L 150 0 A 150 150 0 0 0 130 -75 Z" fill="url(#hr-sweep)" opacity="0.55">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="6s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <g font-family="'IBM Plex Mono', monospace" font-size="11" fill="#B9AFC9">
+    <text x="380" y="92" text-anchor="middle" letter-spacing="2">FRONTEND</text>
+    <text x="548" y="254" text-anchor="start" letter-spacing="2">FULL-STACK</text>
+    <text x="380" y="418" text-anchor="middle" letter-spacing="2">AI · LINUX</text>
+    <text x="212" y="254" text-anchor="end" letter-spacing="2">SECURITY</text>
+  </g>
+
+  <!-- Legend -->
+  <g font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#F2EEF8">
+    <text x="660" y="130" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#F2EEF8">Current attention</text>
+    <rect x="660" y="142" width="80" height="2" fill="#B57BEE"/>
+
+    <g transform="translate(660 180)">
+      <rect x="0" y="-10" width="12" height="12" rx="2" fill="#B57BEE"><animate attributeName="opacity" values="0.6;1;0.6" dur="4s" repeatCount="indefinite"/></rect>
+      <text x="24" y="0">Frontend engineering</text>
+      <rect x="0" y="18" width="220" height="4" rx="2" fill="#241A33"/>
+      <rect x="0" y="18" width="180" height="4" rx="2" fill="#B57BEE">
+        <animate attributeName="width" values="60;180;60" dur="6s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <g transform="translate(660 230)">
+      <rect x="0" y="-10" width="12" height="12" rx="2" fill="#E49A5C"><animate attributeName="opacity" values="1;0.6;1" dur="4.4s" repeatCount="indefinite"/></rect>
+      <text x="24" y="0">Full-stack foundations</text>
+      <rect x="0" y="18" width="220" height="4" rx="2" fill="#241A33"/>
+      <rect x="0" y="18" width="140" height="4" rx="2" fill="#E49A5C">
+        <animate attributeName="width" values="50;140;50" dur="6.6s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <g transform="translate(660 280)">
+      <rect x="0" y="-10" width="12" height="12" rx="2" fill="#8FBF9F"><animate attributeName="opacity" values="0.6;1;0.6" dur="4.8s" repeatCount="indefinite"/></rect>
+      <text x="24" y="0">Local AI &amp; Linux</text>
+      <rect x="0" y="18" width="220" height="4" rx="2" fill="#241A33"/>
+      <rect x="0" y="18" width="160" height="4" rx="2" fill="#8FBF9F">
+        <animate attributeName="width" values="60;160;60" dur="7.2s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <g transform="translate(660 330)">
+      <rect x="0" y="-10" width="12" height="12" rx="2" fill="#3D2A52"><animate attributeName="opacity" values="1;0.6;1" dur="5.2s" repeatCount="indefinite"/></rect>
+      <text x="24" y="0">Cybersecurity fundamentals</text>
+      <rect x="0" y="18" width="220" height="4" rx="2" fill="#241A33"/>
+      <rect x="0" y="18" width="110" height="4" rx="2" fill="#3D2A52">
+        <animate attributeName="width" values="40;110;40" dur="7.8s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </g>
+</svg>
